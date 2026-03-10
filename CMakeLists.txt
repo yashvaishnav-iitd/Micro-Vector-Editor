@@ -65,7 +65,7 @@ add_executable(MicroVectorEditor
     "src/shapes/rounded_rectangle.h"
     "src/shapes/rounded_rectangle.cpp"
 
-    "srcshapes//text.h"
+    "src/shapes/text.h"
     "src/shapes/text.cpp"
 
     # Commands (Undo/Redo)
@@ -100,6 +100,8 @@ add_executable(MicroVectorEditor
 # "PRIVATE" means only this target needs these headers.
 target_include_directories(MicroVectorEditor PRIVATE
     src
+    src/graphics
+    src/tools
     src/shapes
     src/canvas
     src/parser
